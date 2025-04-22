@@ -1,3 +1,4 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,152 +6,341 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Robe Kyle P. Salangad | Portfolio</title>
 </head>
 
 <body>
-  <!--navigation -->
-  <nav>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Script Fucntion for hamburger Effect -->
-    <script>
-      function myFunction() {
+  <div class="loading-overlay">
+    <div class="loader"></div>
+  </div>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div> <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"> <a href="#Home">RKS</a> </div>
+      <div class="topnav" id="myTopnav"> <a href="#Home" class="nav-link active">Home</a> <a href="#about-me"
+          class="nav-link">About</a> <a href="#project" class="nav-link">Projects</a> <a href="#Contact"
+          class="nav-link">Contact</a> <button class="theme-toggle" aria-label="Toggle dark mode"> <i
+            class="fas fa-moon"></i> </button> <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i
+            class="fa fa-bars"></i> </a> </div>
+    </nav>
+  </header>
+  <main> <!-- Hero Section -->
+    <section class="hero-section" id="Home">
+      <div class="hero-content">
+        <h1 class="title-main"><span id="typewriter"></span></h1>
+        <p class="hero-subtitle">Computer Science Student & Web Developer</p>
+        <div class="hero-buttons"> <a href="#about-me" class="btn btn-primary">Learn More</a> <a href="#Contact"
+            class="btn btn-outline">Get in Touch</a> </div>
+      </div>
+      <div class="hero-image"> <img src="images/image_background.gif" alt="Background Image" class="parallax-img">
+      </div>
+      <div class="hero-shape"></div>
+    </section>
+    <!-- About Section -->
+    <section class="about-section" id="about-me">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="info-grid">
+        <!-- About Me Card -->
+        <div class="info-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <h3>Who I Am</h3>
+          </div>
+          <div class="card-image">
+            <img src="images/Robe_kyle.jpg" alt="Robe Kyle Salangad">
+          </div>
+          <div class="card-body">
+            <p>Hello! I'm a 3rd-year Computer Science student with a deep passion for web development, coding, and
+              crafting
+              interactive digital experiences. I thrive on solving complex problems and love the continuous journey of
+              learning in the ever-evolving world of technology.</p>
+          </div>
+        </div>
+
+        <!-- Skills Card -->
+        <div class="info-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Skills</h3>
+          </div>
+          <div class="card-image">
+            <img src="images/Computer.gif" alt="Computer Skills">
+          </div>
+          <div class="card-body">
+            <p>I have a solid foundation in front-end technologies including HTML and CSS, which I use to design and
+              develop
+              clean, responsive, and user-friendly interfaces. I'm confident working with modern layout techniques such
+              as
+              Flexbox and CSS Grid.</p>
+          </div>
+        </div>
+
+        <!-- Hobbies Card -->
+        <div class="info-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <h3>Hobbies</h3>
+          </div>
+          <div class="card-image">
+            <img src="images/Hobbies.gif" alt="Hobbies">
+          </div>
+          <div class="card-body">
+            <p>To stay balanced, I make time for physical fitness, particularly weightlifting, which helps me maintain
+              focus, discipline, and a healthy mindset. I find that the consistency and goal-setting involved in fitness
+              directly translate to my approach in tech.</p>
+          </div>
+        </div>
+
+        <!-- Education Card -->
+        <div class="info-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Education</h3>
+          </div>
+          <div class="card-image">
+            <img src="images/Virgen_milagrosa.jpg" alt="Virgen Milagrosa University">
+          </div>
+          <div class="card-body">
+            <p>Virgen Milagrosa University Foundation (VMUF) - pursuing my degree in Computer Science with a strong
+              academic
+              performance, maintaining an average of 87%. My coursework has provided me with a solid foundation in both
+              theoretical and practical aspects of computing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="project-section" id="project">
+      <div class="section-header">
+        <h2 class="section-title">My Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="project-container">
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Calorie Tracker App">
+            <div class="project-overlay">
+              <div class="project-buttons">
+                <a href="https://github.com/nero213/calorie_tracker" target="_blank" class="project-btn"><i
+                    class="fab fa-github"></i> View Code</a>
+                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Calorie Tracker</h3>
+            <p class="project-description">A comprehensive application for tracking daily calorie intake, managing
+              nutrition goals, and monitoring progress over time.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1583127763493-bf2ab2f84267?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Face Mask Detection">
+            <div class="project-overlay">
+              <div class="project-buttons">
+                <a href="https://github.com/nero213/FaceMask_detection" target="_blank" class="project-btn"><i
+                    class="fab fa-github"></i> View Code</a>
+                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Face Mask Detection</h3>
+            <p class="project-description">An AI-powered computer vision system to detect whether people are wearing
+              face masks properly, helping enforce safety protocols.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Computer Vision</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="Contact">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Location</h4>
+              <p>San Carlos City, Philippines</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p>robeksalangad@example.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Phone</h4>
+              <p>+63 123 456 7890</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/nero213" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/robe-kyle-salangad/" target="_blank" class="social-icon"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/Yuiji1234/" target="_blank" class="social-icon"><i
+                class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="send_email.php" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main> <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-shape"></div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Robe Kyle</h3>
+          <p class="footer-tagline">Building digital experiences that matter</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-nav"> <a href="#Home" class="footer-link">Home</a> <a href="#about-me"
+              class="footer-link">About</a> <a href="#project" class="footer-link">Projects</a> <a href="#Contact"
+              class="footer-link">Contact</a> </div>
+          <div class="footer-social"> <a href="https://github.com/nero213" target="_blank" class="footer-social-icon"><i
+                class="fab fa-github"></i></a> <a href="https://www.linkedin.com/in/robe-kyle-salangad/" target="_blank"
+              class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a> <a
+              href="https://www.facebook.com/Yuiji1234/" target="_blank" class="footer-social-icon"><i
+                class="fab fa-facebook-f"></i></a> </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Robe Kyle P. Salangad. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart"></i> | Virgen Milagrosa University Foundation</p>
+      </div>
+    </div>
+  </footer> <!-- Scripts -->
+  <script src="TypeWrite.js"></script>
+  <script src="Scrolling.js"></script>
+  <script>
+    function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
-          x.className += " responsive";
+            x.className += " responsive";
         } else {
-          x.className = "topnav";
+            x.className = "topnav";
         }
-      }
+    }
+    
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.querySelector('.loading-overlay').style.opacity = '0';
+            setTimeout(function() {
+                document.querySelector('.loading-overlay').style.display = 'none';
+            }, 500);
+        }, 1500);
+    });
+    
+    const cursor = document.querySelector('.cursor');
+    const follower = document.querySelector('.cursor-follower');
+    
+    document.addEventListener('mousemove', function(e) {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        setTimeout(function() {
+            follower.style.left = e.clientX + 'px';
+            follower.style.top = e.clientY + 'px';
+        }, 100);
+    });
+    
+    const themeToggle = document.querySelector('.theme-toggle');
+    
+    themeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('light-mode');
+        const icon = themeToggle.querySelector('i');
+        if (icon.classList.contains('fa-moon')) {
+            icon.classList.replace('fa-moon', 'fa-sun');
+        } else {
+            icon.classList.replace('fa-sun', 'fa-moon');
+        }
+    });
+    
+    window.addEventListener('scroll', function() {
+        const scrolled = window.scrollY;
+        const parallaxImg = document.querySelector('.parallax-img');
+        parallaxImg.style.transform = 'translateY(' + (scrolled * 0.3) + 'px)';
+    });
     </script>
-
-    <div class="topnav">
-      <a href="#Home" class="active">Home</a>
-      <a href="#project">Project</a>
-      <a href="#Contact">Contact</a>
-      <a href="#about-me">Info</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-
-    </div>
-  </nav>
-  <!-- this is the main section -->
-  <main>
-    <!-- for The Main Introduction  -->
-    <div class="Container" id="Home">
-      <script src="TypeWrite.js"></script>
-      <h1 id="typewriter"></h1>
-      <img src="images/image_background.gif" alt="Back_ground_images" id="home">
-    </div>
-    <!-- this is a divider for the two div -->
-    <div class="divider"></div>
-
-    <h1 id="about-me" style="text-align: center; font-size: 2.5rem; color: white;">Information</h1>
-    <!-- this is for the info boxes -->
-    <div class="info-boxes" id="info">
-
-      <!-- this box is about me page -->
-      <div class="box">
-        <h2>About Me</h2>
-        <img src="images/Robe_kyle.jpg" alt="Info 1">
-        <p>Hello! I'm a 3rd-year Computer Science student with a deep passion for web development, coding, and crafting
-          interactive digital experiences. I thrive on solving complex problems and love the continuous journey of
-          learning in the ever-evolving world of technology. From building responsive websites to exploring new tools
-          and frameworks, I enjoy turning creative ideas into functional, user-friendly applications. My goal is to grow
-          as a developer and make meaningful contributions through tech. </p>
-      </div>
-      <!-- this box is About what i do page -->
-      <div class="box">
-        <h2>Skills</h2>
-        <img src="images/Computer.gif" style="height: 16.2rem;" alt="Info 2">
-        <p>I have a solid foundation in front-end technologies including HTML and CSS, which I use to design and develop
-          clean, responsive, and user-friendly interfaces. I'm confident working with modern layout techniques such as
-          Flexbox and CSS Grid, and I enjoy using animations and transitions to create engaging UI experiences.</p>
-      </div>
-      <!-- this is box for my hobbies -->
-      <div class="box">
-        <h2>Hobbies</h2>
-        <img src="images/Hobbies.gif" style="height: 16.2rem;" alt="Info 3">
-        <p>To stay balanced, I make time for physical fitness, particularly weightlifting, which helps me maintain
-          focus, discipline, and a healthy mindset. I find that the consistency and goal-setting involved in fitness
-          directly translate to my approach in tech — always striving to improve, stay motivated, and push beyond
-          limits.
-        </p>
-      </div>
-      <!-- this is the box for my education -->
-      <div class="box">
-        <h2>Education</h2>
-        <img src="images/Virgen_milagrosa.jpg" style="height: 16.2rem;" alt="Info 3">
-        <p>Virgen Milagrosa University Foundation (VMUF)
-          As a dedicated student at VMUF, I am pursuing my degree in Computer Science with a strong academic
-          performance, maintaining an average of 87%. My coursework has provided me with a solid foundation in both
-          theoretical and practical aspects of computing, including software development, web technologies, and
-          problem-solving skills. I am committed to continuous learning and excellence in both academic and personal
-          growth.
-        </p>
-      </div>
-
-    </div>
-    <!-- this is another divider for my project -->
-    <div class="divider"></div>
-
-    <!-- this is the project section -->
-    <div class="project">
-      <h1 id="project" id="project">My Project</h1>
-      <div align="center">
-        <a href="https://github.com/nero213/calorie_tracker" target="_blank">
-          <img
-            src="https://github-readme-stats.vercel.app/api/pin/?username=nero213&repo=calorie_tracker&theme=radical&bg_color=5f6a78"
-            alt="Calorie Tracker" />
-        </a>
-        <a href="https://github.com/nero213/FaceMask_detection" target="_blank">
-          <img
-            src="https://github-readme-stats.vercel.app/api/pin/?username=nero213&repo=FaceMask_detection&theme=radical&bg_color=5f6a78"
-            alt="Project 2" />
-        </a>
-
-      </div>
-    </div>
-
-  </main>
-  <div class="divider"></div>
-  <!-- this is For my contact form -->
-  <section class="contact-form" >
-    <h2 id="Contact">Contact Me</h2>
-    <form action="send_email.php" method="POST">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required>
-  
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required>
-  
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-  
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- this for the footer -->
-  <footer class="footer">
-    <div class="footer-content" >
-      <p>&copy; 2025 Robe Kyle P. Salangad. All rights reserved.</p>
-      <p>Made with  | Virgen Milagrosa University Foundation</p>
-      <div class="footer-links">
-        <a href="#home" class="footer-link">Home</a>
-        <a href="#info" class="footer-link">Info</a>
-        <a href="#project" class="footer-link">Project</a>
-        <a href="https://github.com/nero213" target="_blank" class="footer-link"><i class="fa fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/robe-kyle-salangad/" target="_blank" class="footer-link"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/Yuiji1234/" target="_blank" class="footer-link"><i class="fa fa-facebook"></i></a>
-      </div>
-    </div>
-  </footer>
-
-
-  
-
+    
 </body>
 
 </html>
