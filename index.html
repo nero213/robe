@@ -26,9 +26,7 @@
       <div class="logo"> <a href="#Home">RKS</a> </div>
       <div class="topnav" id="myTopnav"> <a href="#Home" class="nav-link active">Home</a> <a href="#about-me"
           class="nav-link">About</a> <a href="#project" class="nav-link">Projects</a> <a href="#Contact"
-          class="nav-link">Contact</a> <button class="theme-toggle" aria-label="Toggle dark mode"> <i
-            class="fas fa-moon"></i> </button> <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i
-            class="fa fa-bars"></i> </a> </div>
+          class="nav-link">Contact</a>  </div>
     </nav>
   </header>
   <main> <!-- Hero Section -->
@@ -329,17 +327,7 @@
         }, 100);
     });
     
-    const themeToggle = document.querySelector('.theme-toggle');
-    
-    themeToggle.addEventListener('click', function() {
-        document.body.classList.toggle('light-mode');
-        const icon = themeToggle.querySelector('i');
-        if (icon.classList.contains('fa-moon')) {
-            icon.classList.replace('fa-moon', 'fa-sun');
-        } else {
-            icon.classList.replace('fa-sun', 'fa-moon');
-        }
-    });
+
     
     window.addEventListener('scroll', function() {
         const scrolled = window.scrollY;
