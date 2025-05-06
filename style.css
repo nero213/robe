@@ -43,96 +43,44 @@ body {
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 body.light-mode {
-  background-color: var(--light-surface-variant);
+  background-color: var(--light);
   color: var(--text-dark);
-  
-  & * {
-    color: inherit;
-  }
 }
 
 body.light-mode .navbar,
-body.light-mode .footer,
-body.light-mode .topnav {
+body.light-mode .footer {
   background-color: var(--light-surface);
-  
-  a, .theme-toggle {
-    color: var(--text-dark);
-    
-    &:hover {
-      color: var(--primary);
-    }
-  }
+  color: var(--text-dark);
+}
+
+body.light-mode .topnav a,
+body.light-mode .theme-toggle {
+  color: var(--text-dark);
 }
 
 body.light-mode .info-card,
 body.light-mode .project-card,
-body.light-mode .contact-form,
-body.light-mode .contact-info {
+body.light-mode .contact-form {
   background-color: var(--light-surface);
   color: var(--text-dark);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  
-  h1, h2, h3, h4, h5, h6, p, span {
-    color: var(--text-dark);
-  }
 }
 
 body.light-mode .section-title,
-body.light-mode .card-header h3,
-body.light-mode .contact-text h4,
-body.light-mode .contact-text p,
-body.light-mode .form-group label {
+body.light-mode .card-header h3 {
   color: var(--text-dark);
 }
 
 body.light-mode .btn-primary {
   background-color: var(--primary);
   color: var(--text-light);
-  
-  &:hover {
-    background-color: var(--primary-dark);
-  }
 }
 
 body.light-mode .btn-outline {
   border-color: var(--primary);
   color: var(--primary-dark);
-  
-  &:hover {
-    background-color: var(--primary);
-    color: var(--text-light);
-  }
-}
-
-body.light-mode input,
-body.light-mode textarea {
-  background-color: var(--light-surface);
-  color: var(--text-dark);
-  border: 1px solid #ddd;
-  
-  &::placeholder {
-    color: var(--text-dark-secondary);
-    opacity: 0.7;
-  }
-}
-
-body.light-mode .social-links a {
-  color: var(--text-dark-secondary);
-  
-  &:hover {
-    color: var(--primary);
-  }
-}
-
-body.light-mode .cursor,
-body.light-mode .cursor-follower {
-  background-color: var(--text-dark);
-}
-
-.light-mode-exempt {
-  color: inherit !important;
 }
 
 /* Loading Animation */
